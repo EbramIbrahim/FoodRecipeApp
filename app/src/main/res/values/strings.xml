@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mealz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="meals_name">Meals Name</string>
+    <string name="something_go_wrong_please_check_internet_connection">Something go wrong...Please check internet connection.</string>
+</resources>

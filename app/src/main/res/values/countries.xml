@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="countries">
+        <item>Egyptian</item>
+        <item>Canadian</item>
+        <item>Japanese</item>
+        <item>British</item>
+        <item>Portuguese</item>
+        <item>Mexican</item>
+        <item>Irish</item>
+        <item>French</item>
+        <item>Italian</item>
+        <item>Jamaican</item>
+    </string-array>
+</resources>

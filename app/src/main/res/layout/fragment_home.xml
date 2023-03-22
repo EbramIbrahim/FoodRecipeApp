@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.home_screen.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Best Recipe \nFor Cooking"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipsGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:singleLine="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_1"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Egyptian" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_2"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Canadian" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_3"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Japanese" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_4"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="British" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_5"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Portuguese" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_6"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mexican" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_7"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Irish" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_8"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="French" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_9"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Italian" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_10"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jamaican" />
+
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp">
+
+            <ProgressBar
+                android:id="@+id/randomMealPb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+
+            <ImageView
+                android:id="@+id/randomMealIm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16sp"
+                android:layout_marginEnd="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/gradient" />
+
+            <TextView
+                android:id="@+id/randomMealTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Meals Name"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="#fff"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/countryMealTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Country Popular Foods"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:layout_marginTop="18dp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCountryMeals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/countryPb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_centerInParent="true"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
