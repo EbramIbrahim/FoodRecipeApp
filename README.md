@@ -25,7 +25,7 @@
       <img src="https://user-images.githubusercontent.com/104721363/226899475-bfc3e87f-8687-4f5a-8e19-13afaf027c4f.jpg" width="250" height="500"/>
     </td>
     <td>
-      <img src="(https://user-images.githubusercontent.com/104721363/226899538-bc6391f3-8b79-405d-979c-57dcdfcdf600.jpg" width="250" height="500"/>
+      <img src="https://user-images.githubusercontent.com/104721363/226899538-bc6391f3-8b79-405d-979c-57dcdfcdf600.jpg" width="250" height="500"/>
     </td>
   </tr>
   
